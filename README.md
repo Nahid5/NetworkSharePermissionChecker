@@ -7,7 +7,7 @@ Checks the permissions of items in a network share
 This will generate a list of files and filders and teh permissions the current has
 
 Example Output:
-
+```
 \\8.8.8.8\E\Test1 BUILTIN\Administrators:(I)(F)
                                  BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
                                  NT AUTHORITY\SYSTEM:(I)(F)
@@ -52,3 +52,4 @@ Successfully processed 1 files; Failed processing 0 files
 \\8.8.8.8\E\Test2
 \\8.8.8.8\E\Test3
 \\8.8.8.8\E\Test4
+```
