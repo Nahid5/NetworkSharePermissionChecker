@@ -18,7 +18,7 @@ $allFolders = Get-ChildItem "$networkPath" | Select-Object -Expand "Name"
 foreach ($folder in $allFolders) {
     $fullPath = "$networkPath" + "$folder"
     $allPaths += "$fullPath"
-    icacls "$fullPath" | Out-File -Append "$outputFile"
+    Get-Acl "$fullPath" | fl | Out-File -Append "$outputFile"
 }
 
 # Write all paths found at the end

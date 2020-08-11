@@ -8,48 +8,42 @@ This will generate a list of files and filders and teh permissions the current h
 
 Example Output:
 ```
-\\8.8.8.8\E\Test1 BUILTIN\Administrators:(I)(F)
-                                 BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
-                                 NT AUTHORITY\SYSTEM:(I)(F)
-                                 NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
-                                 NT AUTHORITY\Authenticated Users:(I)(M)
-                                 NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
-                                 BUILTIN\Users:(I)(RX)
-                                 BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
 
-Successfully processed 1 files; Failed processing 0 files
-\\8.8.8.8\E\Test2 BUILTIN\Administrators:(I)(F)
-                      BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
-                      NT AUTHORITY\SYSTEM:(I)(F)
-                      NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
-                      NT AUTHORITY\Authenticated Users:(I)(M)
-                      NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
-                      BUILTIN\Users:(I)(RX)
-                      BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+Path   : Microsoft.PowerShell.Core\FileSystem::\\8.8.8.8\E\Test1
+Owner  : TestComp\UserCCC
+Group  : TestComp\None
+Access : BUILTIN\Administrators Allow  FullControl
+         BUILTIN\Administrators Allow  268435456
+         NT AUTHORITY\SYSTEM Allow  FullControl
+         NT AUTHORITY\SYSTEM Allow  268435456
+         NT AUTHORITY\Authenticated Users Allow  Modify, Synchronize
+         NT AUTHORITY\Authenticated Users Allow  -536805376
+         BUILTIN\Users Allow  ReadAndExecute, Synchronize
+         BUILTIN\Users Allow  -1610612736
+Audit  : 
+Sddl   : 
 
-Successfully processed 1 files; Failed processing 0 files
-\\8.8.8.8\E\Test3 BUILTIN\Administrators:(I)(F)
-                        BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
-                        NT AUTHORITY\SYSTEM:(I)(F)
-                        NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
-                        NT AUTHORITY\Authenticated Users:(I)(M)
-                        NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
-                        BUILTIN\Users:(I)(RX)
-                        BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
 
-Successfully processed 1 files; Failed processing 0 files
-\\8.8.8.8\E\Test4 BUILTIN\Administrators:(I)(F)
-                          BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
-                          NT AUTHORITY\SYSTEM:(I)(F)
-                          NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
-                          NT AUTHORITY\Authenticated Users:(I)(M)
-                          NT AUTHORITY\Authenticated Users:(I)(OI)(CI)(IO)(M)
-                          BUILTIN\Users:(I)(RX)
-                          BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
 
-Successfully processed 1 files; Failed processing 0 files
+
+
+Path   : Microsoft.PowerShell.Core\FileSystem::\\8.8.8.8\E\Test2
+Owner  : TestComp\UserCCC
+Group  : TestComp\None
+Access : BUILTIN\Administrators Allow  FullControl
+         BUILTIN\Administrators Allow  268435456
+         NT AUTHORITY\SYSTEM Allow  FullControl
+         NT AUTHORITY\SYSTEM Allow  268435456
+         NT AUTHORITY\Authenticated Users Allow  Modify, Synchronize
+         NT AUTHORITY\Authenticated Users Allow  -536805376
+         BUILTIN\Users Allow  ReadAndExecute, Synchronize
+         BUILTIN\Users Allow  -1610612736
+Audit  : 
+Sddl   : 
+
+
+
 \\8.8.8.8\E\Test1
 \\8.8.8.8\E\Test2
-\\8.8.8.8\E\Test3
-\\8.8.8.8\E\Test4
+
 ```
